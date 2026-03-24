@@ -3,7 +3,7 @@
 This repository contains my personal portfolio website, built using **HTML** and **CSS**, showcasing my skills, projects, achievements, and contact information. The website is fully responsive, clean, and professional.  
 
 The portfolio is deployed live using **GitHub Pages**:  
-[🌐 View Live Site]((https://github.com/Bharathi1292/Portfolio.git)
+[🌐 View Live Site]((https://github.com/Bharathi1292/Portfolio)
 
 ---
 
