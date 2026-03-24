@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharathi Dibbidi | Portfolio</title>
+
+<style>
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    background-color: #f5f7f9;
+    color: #2d3748;
+    scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    position: sticky;
+    top: 0;
+    background: #2c7a7b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #e6fffa;
+    border-bottom: 2px solid #e6fffa;
+    padding-bottom: 2px;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #2c7a7b;
+    color: white;
+    position: relative;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e6fffa;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(44,122,123,0.4);
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 42px;
+}
+
+header h3 {
+    margin: 5px 0 15px;
+    font-weight: normal;
+    color: #e6fffa;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    background: white;
+    margin: 25px auto;
+    padding: 30px;
+    width: 85%;
+    max-width: 950px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+h2 {
+    color: #2c7a7b;
+    border-bottom: 3px solid #cbd5e0;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+h2 span {
+    margin-right: 8px;
+}
+
+/* ===== SKILLS GRID ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.skill-box {
+    background-color: #edf2f7;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #2c7a7b;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 18px rgba(44, 122, 123, 0.3);
+}
+
+/* ===== PROJECT CARDS ===== */
+.project {
+    background: #f8fafc;
+    padding: 18px;
+    border-left: 5px solid #2c7a7b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 18px rgba(44, 122, 123, 0.2);
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #2c7a7b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1f5c5d;
+}
+
+/* ===== CV BUTTON ===== */
+.cv-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2c7a7b;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #1f5c5d;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2c7a7b;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ===== TESTIMONIALS ===== */
+blockquote {
+    background: #edf2f7;
+    padding: 20px;
+    border-left: 5px solid #2c7a7b;
+    border-radius: 8px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* ===== BACK TO TOP ===== */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    header h1 { font-size: 32px; }
+    header h3 { font-size: 18px; }
+}
+</style>
+</head>
+
+<body id="top">
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <img src="profile.jpg" alt="Bharathi Dibbidi">
+    <h1>Bharathi Dibbidi</h1>
+    <h3>Data Engineer | Python ML/AI Developer</h3>
+    <p>Turning data into meaningful insights using Python, Cloud, and AI.</p>
+    <a href="Bharathi_CV.pdf" class="cv-button" target="_blank">📄 Download CV</a>
+</header>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <h2><span>👩‍💻</span>About Me</h2>
+    <p>
+        Hello! I’m Bharathi Dibbidi, a motivated Junior Data Engineer and Python AI Developer
+        based in Stockholm. I have hands-on experience building cloud-based data pipelines
+        using Python, SQL, and Microsoft Azure, with strong knowledge of ETL workflows,
+        data transformation, and dashboard development.
+        <br><br>
+        During my internship at Simplitics AB, I developed monitoring dashboards for real-time
+        data pipelines and improved issue detection and performance tracking. Currently,
+        I am expanding my expertise in Machine Learning, Deep Learning, and Natural Language
+        Processing through the Python & AI Program at Lexicon.
+    </p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <h2><span>🚀</span>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-box">
+            <strong>Languages & Tools</strong>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML & JavaScript</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+        <div class="skill-box">
+            <strong>Data Engineering</strong>
+            <ul>
+                <li>ETL Pipelines</li>
+                <li>Delta Lake</li>
+                <li>Data Transformation</li>
+                <li>Real-Time Streaming</li>
+            </ul>
+        </div>
+        <div class="skill-box">
+            <strong>Cloud & Databases</strong>
+            <ul>
+                <li>Microsoft Azure</li>
+                <li>SQL Server</li>
+                <li>MySQL</li>
+                <li>Snowflake</li>
+            </ul>
+        </div>
+        <div class="skill-box">
+            <strong>Visualization</strong>
+            <ul>
+                <li>Power BI</li>
+                <li>Streamlit</li>
+                <li>Grafana</li>
+                <li>Plotly</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <h2><span>📂</span>Projects</h2>
+
+    <div class="project">
+        <h3>📊 LIA Data Pipeline Monitoring Dashboard</h3>
+        <p>
+            Developed a Streamlit dashboard during my internship at Simplitics AB
+            to monitor real-time data pipelines. Built system pages for logs,
+            job tracing, ingestion metrics, and performance monitoring,
+            helping reduce troubleshooting time.
+        </p>
+        <a href="https://github.com/Bharathi1292/Simplitics_LIA_Dashboard" target="_blank">
+            View Project on GitHub
+        </a>
+    </div>
+
+    <div class="project">
+        <h3>🚢 Titanic++ Survival Prediction System</h3>
+        <p>
+            Developed a Django-based web application that predicts Titanic passenger
+            survival using a Machine Learning model. Users can enter passenger details
+            and receive real-time predictions with stored prediction history.
+        </p>
+        <a href="https://github.com/gabri3l4-execute/titanic_capstone.git" target="_blank">
+            View Project on GitHub
+        </a>
+    </div>
+</section>
+
+<!-- ===== CERTIFICATIONS & ACHIEVEMENTS ===== -->
+<section id="certifications">
+    <h2><span>🏆</span>Certifications & Achievements</h2>
+    <ul>
+        <li>
+            <strong>SnowPro Core Certification</strong> – Issued by Snowflake, June 2025
+            <br>Credential ID: S99078-250603-SOL25
+            <br><a href="https://achieve.snowflake.com/1739191d-18c6-485f-9be3-25730d6f7fb5#acc.lZr71ztS" target="_blank">
+                View Certificate
+            </a>
+        </li>
+        <li>
+            <strong>Informatica PowerCenter</strong> – Issued by Raj Cloud Technologies, September 2025
+            <br>Credential ID: cb92fa7a2f4925c2
+            <br><a href="https://rajcloudtech.com/certificate/?cert_hash=cb92fa7a2f4925c2" target="_blank">
+                View Certificate
+            </a>
+        </li>
+    </ul>
+</section>
+
+<!-- ===== HOBBIES ===== -->
+<section id="hobbies">
+    <h2><span>🌟</span>Hobbies & Interests</h2>
+    <p>
+        Outside of data engineering, I enjoy exploring AI-driven projects, reading tech blogs, 
+        playing chess, and hiking in Stockholm’s beautiful nature. I love solving challenges 
+        that merge creativity with analytical thinking.
+    </p>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+    <h2><span>💬</span>Testimonials</h2>
+    <blockquote>
+        "Bharathi consistently demonstrated excellent problem-solving skills and 
+        a keen understanding of data engineering pipelines during her internship at Simplitics AB."
+        <br><strong>- Mentor, Simplitics AB</strong>
+    </blockquote>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <h2><span>📬</span>Contact</h2>
+    <p>📧 Email: dibbidibharathi@gmail.com</p>
+    <p>📱 Phone: +46 734908900</p>
+    <p>📍 Location: Upplands Väsby, Stockholm</p>
+    <p>
+        🔗 LinkedIn:
+        <a href="https://www.linkedin.com/in/bharathi-dibbidi/" target="_blank">
+            linkedin.com/in/bharathi-dibbidi
+        </a>
+    </p>
+    <p>
+        💻 GitHub:
+        <a href="https://github.com/Bharathi1292" target="_blank">
+            github.com/Bharathi1292
+        </a>
+    </p>
+</section>
+
+<!-- ===== BACK TO TOP BUTTON ===== -->
+<a href="#top" id="backToTop" class="cv-button">⬆ Top</a>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 Bharathi Dibbidi | Portfolio Website</p>
+</footer>
+
+<!-- ===== SMOOTH SCROLL ACTIVE LINK SCRIPT ===== -->
+<script>
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+        let fromTop = window.scrollY + 70;
+        navLinks.forEach(link => {
+            let section = document.querySelector(link.hash);
+            if (
+                section.offsetTop <= fromTop &&
+                section.offsetTop + section.offsetHeight > fromTop
+            ) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

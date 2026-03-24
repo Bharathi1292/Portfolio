@@ -9,8 +9,8 @@ The portfolio is deployed live using **GitHub Pages**:
 
 ## Screenshot
 
-![Portfolio Screenshot](screenshot.png)  
-*Replace `screenshot.png` with an image of your website in the repository root.*
+![Portfolio Screenshot](screenshot.jpg)  
+
 
 ---
 
